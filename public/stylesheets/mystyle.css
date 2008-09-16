@@ -1,0 +1,94 @@
+li {
+	display: block; /*vypne trapne bullety*/
+	margin: 8px;
+}
+
+ul {
+	text-align: justify;
+	}
+	
+#sheet {
+	margin-left: 20%;
+	margin-right: 20%;
+	padding: 0;
+	}
+	
+/* top menu */
+#topmenu {
+	width: 80%;
+	height: 54px;
+}
+#topmenu ul {
+	margin: 0;
+	padding: 0;
+}
+#topmenu li {
+	display :inline;
+	background: url("../images/splash.png");
+	padding: 11px 33px 20px 30px;
+}
+/* /topmenu */
+
+/*photka*/
+#photo {
+	width: 10%;
+	margin: 15px;
+	border: thick solid;
+	float: left;
+}
+/* /photka */
+
+
+/* informace o uctu - vpravo od fotografie */
+#account {
+	width: 40%;
+	margin-bottom: 80px;
+	margin-left: 10px;
+	}
+	
+.motto {
+	font-style: oblique;
+	margin-top: 20px;
+	padding-left: 120px;
+	}
+/* /informace o uctu */
+
+
+/* osobni informace */
+#personal {
+	margin: 0;
+	}
+#personal ul {
+	padding: 15px;
+	margin: 0;
+	}
+
+/* /osobni informace */
+
+/*killy (noziky) */
+#kills ul {
+	margin: 0;
+	margin-top: 15px;
+	padding: 0;
+}
+#kills li {
+	display: inline;
+}
+
+#deaths ul {
+	margin: 0;
+	padding: 0;
+}
+#deaths li {
+	display: inline;
+	}
+
+#alive ul {
+	margin: 0;
+	padding: 0;
+}
+#alive li {
+	display: inline;
+	}
+	
+

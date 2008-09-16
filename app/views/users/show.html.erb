@@ -1,0 +1,17 @@
+<%= image_tag(@user) %>
+	<div id="account">
+		<ul>
+			<li><%= @user.name || link_to("nastavit jmeno", "nekam")%></li>
+			<li><%= @user.email %></li>
+			<li>Registrován: <%= @user.activated_at %></li>
+			<li class="motto"><%= @user.motto || link_to("nastavit motto", "nekam")%></li>
+		</ul>
+	</div>
+	<div id="personal">
+		<ul>
+			<li>Přibližně <% if @user.year_of_birth %><%= (Time.now - @user.year_of_birth).years %> <% else %> <%= link_to("nastavit rok narození") %><%end%>  let.</li>
+			<li><%= @user.height || link_to("nastavit vysku") %> centimetrů</li>
+			<li><%= @user.occupation || link_to("Čím se zabýváte") %></li>
+			<li>Naposledy spatřen v <%= @user.last_seen_in || link_to("Kde se vyskytujete?")%></li>
+		</ul>
+	</div>
