@@ -6,7 +6,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
   map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate', :activation_code => nil 
   map.resource :session
-
+  map.root :controller => 'greating', :action => :index
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
